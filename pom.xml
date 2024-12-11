@@ -11,10 +11,20 @@
   <url>http://maven.apache.org</url>
 
   <properties>
+    <java.version>17</java.version>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 
+    <maven.compiler.source>17</maven.compiler.source>
+    <maven.compiler.target>17</maven.compiler.target>
+
     <lombok.version>1.18.34</lombok.version>
-    <junit.version>3.8.1</junit.version>
+    <junit.version>4.13.2</junit.version>
+    <junit-jupiter.version>5.11.1</junit-jupiter.version>
+    <junit-jupiter-params.version>5.11.1</junit-jupiter-params.version>
+    <junit-jupiter-api.version>5.11.1</junit-jupiter-api.version>
+    <mockito-core.version>4.0.0</mockito-core.version>
+    <powermock-module-junit4.version>2.0.9</powermock-module-junit4.version>
+    <powermock-api-mockito2.version>2.0.9</powermock-api-mockito2.version>
   </properties>
 
   <dependencies>
@@ -22,6 +32,42 @@
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
       <version>${junit.version}</version>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.junit.jupiter</groupId>
+      <artifactId>junit-jupiter</artifactId>
+      <version>${junit-jupiter.version}</version>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.junit.jupiter</groupId>
+      <artifactId>junit-jupiter-params</artifactId>
+      <version>${junit-jupiter-params.version}</version>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.junit.jupiter</groupId>
+      <artifactId>junit-jupiter-api</artifactId>
+      <version>${junit-jupiter-api.version}</version>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.mockito</groupId>
+      <artifactId>mockito-core</artifactId>
+      <version>${mockito-core.version}</version>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.powermock</groupId>
+      <artifactId>powermock-module-junit4</artifactId>
+      <version>${powermock-module-junit4.version}</version>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.powermock</groupId>
+      <artifactId>powermock-api-mockito2</artifactId>
+      <version>${powermock-api-mockito2.version}</version>
       <scope>test</scope>
     </dependency>
     <dependency>
